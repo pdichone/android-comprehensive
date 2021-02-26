@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Italic;
+\f3\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red112\green150\blue255;\red29\green38\blue42;\red184\green230\blue123;
+\red182\green194\blue220;\red234\green255\blue255;\red67\green91\blue103;\red121\green213\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c43922\c58824\c100000;\csgenericrgb\c11373\c14902\c16471;\csgenericrgb\c72157\c90196\c48235;
+\csgenericrgb\c71373\c76078\c86275;\csgenericrgb\c91765\c100000\c100000;\csgenericrgb\c26275\c35686\c40392;\csgenericrgb\c47451\c83529\c100000;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+app gradle (add the inside dependencies:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs46 \cf2 \cb3 implementation \cf4 "androidx.appcompat:appcompat:\cf5 $\cf6 rootProject\cf5 .appCompatVersion\cf4 "\
+\
+
+\f2\i \cf7 // Dependencies for working with Architecture components\
+// You'll probably have to update the version numbers in build.gradle (Project)\
+\
+// Room components\
+
+\f1\i0 \cf2 implementation \cf4 "androidx.room:room-runtime:\cf5 $\cf6 rootProject\cf5 .roomVersion\cf4 "\
+\cf2 annotationProcessor \cf4 "androidx.room:room-compiler:\cf5 $\cf6 rootProject\cf5 .roomVersion\cf4 "\
+\cf2 androidTestImplementation \cf4 "androidx.room:room-testing:\cf5 $\cf6 rootProject\cf5 .roomVersion\cf4 "\
+\
+
+\f2\i \cf7 // Lifecycle components\
+
+\f1\i0 \cf2 implementation \cf4 "androidx.lifecycle:lifecycle-viewmodel:\cf5 $\cf6 rootProject\cf5 .lifecycleVersion\cf4 "\
+\cf2 implementation \cf4 "androidx.lifecycle:lifecycle-livedata:\cf5 $\cf6 rootProject\cf5 .lifecycleVersion\cf4 "\
+\cf2 implementation \cf4 "androidx.lifecycle:lifecycle-common-java8:\cf5 $\cf6 rootProject\cf5 .lifecycleVersion\cf4 "\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \
+\
+\
+\
+\
+\
+gradle (add at the bottom of build.gradle project):\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs46 \cf2 \cb3 ext 
+\f3\b \cf8 \{\
+    
+\f1\b0 \cf5 appCompatVersion \cf8 = \cf4 '1.2.0'\
+    \cf5 constraintLayoutVersion \cf8 = \cf4 '2.0.2'\
+    \cf5 coreTestingVersion \cf8 = \cf4 '2.1.0'\
+    \cf5 lifecycleVersion \cf8 = \cf4 '2.2.0'\
+    \cf5 materialVersion \cf8 = \cf4 '1.2.1'\
+    \cf5 roomVersion \cf8 = \cf4 '2.2.5'\
+    
+\f2\i \cf7 // testing\
+    
+\f1\i0 \cf5 junitVersion \cf8 = \cf4 '4.13.1'\
+    \cf5 espressoVersion \cf8 = \cf4 '3.1.0'\
+    \cf5 androidxJunitVersion \cf8 = \cf4 '1.1.2'\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\b \cf8 \}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \cb1 \
+\
+}
